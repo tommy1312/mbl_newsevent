@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <description>Database language strings for News Events extension</description>
+        <type>database</type>
+        <csh_table></csh_table>
+        <labelContext type="array">
+        </labelContext>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="tt_news.tx_mblnewsevent_isevent">Is event</label>
+            <label index="tt_news.tx_mblnewsevent_from">Start date</label>
+            <label index="tt_news.tx_mblnewsevent_fromtime">Start time</label>
+            <label index="tt_news.tx_mblnewsevent_to">End date</label>
+            <label index="tt_news.tx_mblnewsevent_totime">End time</label>
+            <label index="tt_news.tx_mblnewsevent_where">Where (City, Country)</label>
+            <label index="tt_news.tx_mblnewsevent_organizer">Organizer</label>
+            <label index="tt_news.tx_mblnewsevent_orderby_from">Event start</label>
+            <label index="tt_news.tx_mblnewsevent_orderby_to">Event end</label>
+            <label index="eventEditSection">Event info</label>
+            <label index="accessSection">Access</label>
+            <label index="tt_news.tx_mblnewsevent_regfrom">Registration Start Date</label>
+            <label index="tt_news.tx_mblnewsevent_regfromtime">Registration Start Time</label>
+            <label index="tt_news.tx_mblnewsevent_regto">Registration End Date</label>
+            <label index="tt_news.tx_mblnewsevent_regtotime">Registration End Time</label>
+            <label index="tt_news.tx_mblnewsevent_hasregistration">Enable Event Registration</label>
+            <label index="tt_news.tx_mblnewsevent_regurl">Registration URL</label>
+            <label index="tt_news.tx_mblnewsevent_price">Price</label>
+            <label index="tt_news.tx_mblnewsevent_pricenote">Price info text (e.g. "Members 50% off")</label>
+			<label index="tt_news.tx_mblnewsevent_registrationmax">Max registrations</label>
+        </languageKey>
+		<languageKey index="dk" type="array">
+			<label index="accessSection">Adgang</label>
+			<label index="eventEditSection">Kursus info</label>
+			<label index="tt_news.tx_mblnewsevent_fromlabel">Kursus start</label>
+			<label index="tt_news.tx_mblnewsevent_tolabel">Kursus slut</label>
+			<label index="tt_news.tx_mblnewsevent_regfromlabel">Tilmelding start</label>
+			<label index="tt_news.tx_mblnewsevent_regtolabel">Tilmelding slut</label>
+			<label index="tt_news.tx_mblnewsevent_from">Startdato</label>
+			<label index="tt_news.tx_mblnewsevent_fromtime">Starttid</label>
+			<label index="tt_news.tx_mblnewsevent_hasregistration">Aktiver tilmelding</label>
+			<label index="tt_news.tx_mblnewsevent_isevent">Er et kursus</label>
+			<label index="tt_news.tx_mblnewsevent_orderby_from">Kursus start</label>
+			<label index="tt_news.tx_mblnewsevent_orderby_to">Kursus slut</label>
+			<label index="tt_news.tx_mblnewsevent_organizer">Arrangør</label>
+			<label index="tt_news.tx_mblnewsevent_regfrom">Tilmelding startdato</label>
+			<label index="tt_news.tx_mblnewsevent_regfromtime">Tilmelding starttid</label>
+			<label index="tt_news.tx_mblnewsevent_regto">Tilmelding slutdato</label>
+			<label index="tt_news.tx_mblnewsevent_regtotime">Tilmelding sluttid</label>
+			<label index="tt_news.tx_mblnewsevent_regurl">Tilmeldingsside</label>
+			<label index="tt_news.tx_mblnewsevent_to">Slut dato</label>
+			<label index="tt_news.tx_mblnewsevent_totime">Slut tid</label>
+			<label index="tt_news.tx_mblnewsevent_where">Lokation (By, Land)</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+            <label index="tt_news.tx_mblnewsevent_isevent">Ist eine Veranstaltung</label>
+            <label index="tt_news.tx_mblnewsevent_from">Startdatum</label>
+            <label index="tt_news.tx_mblnewsevent_fromtime">Startzeit</label>
+            <label index="tt_news.tx_mblnewsevent_to">Enddatum</label>
+            <label index="tt_news.tx_mblnewsevent_totime">Endzeit</label>
+            <label index="tt_news.tx_mblnewsevent_where">Veranstaltungsort</label>
+            <label index="tt_news.tx_mblnewsevent_organizer">Organisator</label>
+            <label index="tt_news.tx_mblnewsevent_orderby_from">Veranstaltungs-Begin</label>
+            <label index="tt_news.tx_mblnewsevent_orderby_to">Veranstaltungs-Ende</label>
+            <label index="eventEditSection">Veranstaltungs-Informationen</label>
+            <label index="accessSection">Zugriff</label>
+            <label index="tt_news.tx_mblnewsevent_regfrom">Startdatum Registration</label>
+            <label index="tt_news.tx_mblnewsevent_regfromtime">Startzeit Registration</label>
+            <label index="tt_news.tx_mblnewsevent_regto">Enddatum Registration</label>
+            <label index="tt_news.tx_mblnewsevent_regtotime">Endzeit Registration</label>
+            <label index="tt_news.tx_mblnewsevent_hasregistration">Registration zulassen</label>
+            <label index="tt_news.tx_mblnewsevent_regurl">URL für Registration</label>
+            <label index="tt_news.tx_mblnewsevent_price">Preis</label>
+            <label index="tt_news.tx_mblnewsevent_pricenote">Preisinfo (z.B. "Mitglieder 50% Rabatt")</label>
+        </languageKey>
+        <languageKey index="no" type="array">
+            <label index="tt_news.tx_mblnewsevent_isevent">Arrangement</label>
+            <label index="tt_news.tx_mblnewsevent_from">Startdato</label>
+            <label index="tt_news.tx_mblnewsevent_fromtime">Starttid</label>
+            <label index="tt_news.tx_mblnewsevent_to">Sluttdato</label>
+            <label index="tt_news.tx_mblnewsevent_totime">Sluttid</label>
+            <label index="tt_news.tx_mblnewsevent_where">Hvor (By, Land)</label>
+            <label index="tt_news.tx_mblnewsevent_organizer">Organisator</label>
+            <label index="tt_news.tx_mblnewsevent_orderby_from">Arrangement – startdato</label>
+            <label index="tt_news.tx_mblnewsevent_orderby_to">Arrangement – sluttdato</label>
+            <label index="eventEditSection">Informasjon om arrangementet</label>
+            <label index="accessSection">Adgang</label>
+            <label index="tt_news.tx_mblnewsevent_regfrom">Påmelding – startdato</label>
+            <label index="tt_news.tx_mblnewsevent_regfromtime">Påmelding – starttid</label>
+            <label index="tt_news.tx_mblnewsevent_regto">Påmelding – sluttdato</label>
+            <label index="tt_news.tx_mblnewsevent_regtotime">Påmelding – sluttid</label>
+            <label index="tt_news.tx_mblnewsevent_hasregistration">Aktiver påmelding</label>
+            <label index="tt_news.tx_mblnewsevent_regurl">URL til påmelding</label>
+            <label index="tt_news.tx_mblnewsevent_price">Pris</label>
+            <label index="tt_news.tx_mblnewsevent_pricenote">Forklarende tekst om prisen (f.eks. "Medlemmer 50% rabatt")</label>
+        </languageKey>
+        <languageKey index="it" type="array">
+        </languageKey>
+        <languageKey index="fr" type="array">
+        	<label index="tt_news.tx_mblnewsevent_isevent">Ceci est un évènement</label>
+           <label index="tt_news.tx_mblnewsevent_from">Date de début de l'évènement</label>
+           <label index="tt_news.tx_mblnewsevent_fromtime">Horaire de début de l'évènement</label>
+           <label index="tt_news.tx_mblnewsevent_to">Date de fin de l'évènement</label>
+           <label index="tt_news.tx_mblnewsevent_totime">Horaire de fin de l'évènement</label>
+           <label index="tt_news.tx_mblnewsevent_where">Lieu (ville, pays)</label>
+           <label index="tt_news.tx_mblnewsevent_organizer">Organisateur</label>
+           <label index="tt_news.tx_mblnewsevent_orderby_from">Début de l'évènement</label>
+           <label index="tt_news.tx_mblnewsevent_orderby_to">Fin de l'évènement</label>
+           <label index="eventEditSection">Évènement</label>
+           <label index="accessSection">Accès</label>
+           <label index="tt_news.tx_mblnewsevent_regfrom">Date de début des inscriptions</label>
+           <label index="tt_news.tx_mblnewsevent_regfromtime">Horaire de début des inscriptions</label>
+           <label index="tt_news.tx_mblnewsevent_regto">Date de fin des inscriptions</label>
+           <label index="tt_news.tx_mblnewsevent_regtotime">Horaire de fin des inscriptions</label>
+           <label index="tt_news.tx_mblnewsevent_hasregistration">Activer les inscriptions à cet évènement</label>
+           <label index="tt_news.tx_mblnewsevent_regurl">URL de la page d'inscription</label>
+        </languageKey>
+        <languageKey index="es" type="array">
+        </languageKey>
+        <languageKey index="nl" type="array">
+			<label index="tt_news.tx_mblnewsevent_isevent">Is evenement</label>
+            <label index="tt_news.tx_mblnewsevent_from">Start datum</label>
+            <label index="tt_news.tx_mblnewsevent_fromtime">Start tijd</label>
+            <label index="tt_news.tx_mblnewsevent_to">Eind datum</label>
+            <label index="tt_news.tx_mblnewsevent_totime">Eind tijd</label>
+            <label index="tt_news.tx_mblnewsevent_where">Waar (Stad, Land)</label>
+            <label index="tt_news.tx_mblnewsevent_organizer">Organisator</label>
+            <label index="tt_news.tx_mblnewsevent_orderby_from">Evenement start</label>
+            <label index="tt_news.tx_mblnewsevent_orderby_to">Evenement eind</label>
+            <label index="eventEditSection">Evenement informatie</label>
+            <label index="accessSection">Toegang</label>
+            <label index="tt_news.tx_mblnewsevent_regfrom">Registratie start datum</label>
+            <label index="tt_news.tx_mblnewsevent_regfromtime">Registratie start tijd</label>
+            <label index="tt_news.tx_mblnewsevent_regto">Registratie eind datum</label>
+            <label index="tt_news.tx_mblnewsevent_regtotime">Registratie eind tijd</label>
+            <label index="tt_news.tx_mblnewsevent_hasregistration">Sta registratie toe</label>
+            <label index="tt_news.tx_mblnewsevent_regurl">Registratie URL</label>
+            <label index="tt_news.tx_mblnewsevent_price">Prijs</label>
+            <label index="tt_news.tx_mblnewsevent_pricenote">Prijs informatie tekst (b.v. "leden 50% korting")</label>
+        </languageKey>
+        <languageKey index="cz" type="array">
+        </languageKey>
+        <languageKey index="pl" type="array">
+        </languageKey>
+        <languageKey index="si" type="array">
+        </languageKey>
+        <languageKey index="fi" type="array">
+            <label index="tt_news.tx_mblnewsevent_isevent">Tapahtuma</label>
+            <label index="tt_news.tx_mblnewsevent_from">Alkaen</label>
+            <label index="tt_news.tx_mblnewsevent_to">Päättyen</label>
+            <label index="tt_news.tx_mblnewsevent_where">Missä (kaupunki, maa)</label>
+            <label index="tt_news.tx_mblnewsevent_organizer">Järjestäjä</label>
+        </languageKey>
+        <languageKey index="tr" type="array">
+        </languageKey>
+        <languageKey index="se" type="array">
+        </languageKey>
+        <languageKey index="pt" type="array">
+        </languageKey>
+        <languageKey index="ru" type="array">
+        </languageKey>
+        <languageKey index="ro" type="array">
+        </languageKey>
+        <languageKey index="ch" type="array">
+        </languageKey>
+        <languageKey index="sk" type="array">
+        </languageKey>
+        <languageKey index="lt" type="array">
+        </languageKey>
+        <languageKey index="is" type="array">
+        </languageKey>
+        <languageKey index="hr" type="array">
+        </languageKey>
+        <languageKey index="hu" type="array">
+        </languageKey>
+        <languageKey index="gl" type="array">
+        </languageKey>
+        <languageKey index="th" type="array">
+        </languageKey>
+        <languageKey index="gr" type="array">
+        </languageKey>
+        <languageKey index="hk" type="array">
+        </languageKey>
+        <languageKey index="eu" type="array">
+        </languageKey>
+        <languageKey index="bg" type="array">
+        </languageKey>
+        <languageKey index="br" type="array">
+        </languageKey>
+        <languageKey index="et" type="array">
+        </languageKey>
+        <languageKey index="ar" type="array">
+        </languageKey>
+        <languageKey index="he" type="array">
+        </languageKey>
+        <languageKey index="ua" type="array">
+        </languageKey>
+        <languageKey index="lv" type="array">
+        </languageKey>
+        <languageKey index="jp" type="array">
+        </languageKey>
+        <languageKey index="vn" type="array">
+        </languageKey>
+        <languageKey index="ca" type="array">
+        </languageKey>
+        <languageKey index="ba" type="array">
+        </languageKey>
+        <languageKey index="kr" type="array">
+        </languageKey>
+    </data>
+    <orig_hash type="array">
+        <languageKey index="default" type="array">
+            <label index="tt_news.tx_mblnewsevent_isevent" type="integer">204676353</label>
+            <label index="tt_news.tx_mblnewsevent_from" type="integer">80957200</label>
+            <label index="tt_news.tx_mblnewsevent_fromtime" type="integer">107262259</label>
+            <label index="tt_news.tx_mblnewsevent_to" type="integer">192800740</label>
+            <label index="tt_news.tx_mblnewsevent_totime" type="integer">113971828</label>
+            <label index="tt_news.tx_mblnewsevent_where" type="integer">268387961</label>
+            <label index="tt_news.tx_mblnewsevent_organizer" type="integer">231556830</label>
+            <label index="eventEditSection" type="integer">93580799</label>
+        </languageKey>
+        <languageKey index="dk" type="array">
+        </languageKey>
+        <languageKey index="de" type="array">
+        </languageKey>
+        <languageKey index="no" type="array">
+            <label index="tt_news.tx_mblnewsevent_isevent" type="integer">204676353</label>
+            <label index="tt_news.tx_mblnewsevent_from" type="integer">80957200</label>
+            <label index="tt_news.tx_mblnewsevent_to" type="integer">192800740</label>
+            <label index="tt_news.tx_mblnewsevent_where" type="integer">268387961</label>
+            <label index="tt_news.tx_mblnewsevent_organizer" type="integer">231556830</label>
+        </languageKey>
+        <languageKey index="it" type="array">
+        </languageKey>
+        <languageKey index="fr" type="array">
+        </languageKey>
+        <languageKey index="es" type="array">
+        </languageKey>
+        <languageKey index="nl" type="array">
+        </languageKey>
+        <languageKey index="cz" type="array">
+        </languageKey>
+        <languageKey index="pl" type="array">
+        </languageKey>
+        <languageKey index="si" type="array">
+        </languageKey>
+        <languageKey index="fi" type="array">
+            <label index="tt_news.tx_mblnewsevent_isevent" type="integer">204676353</label>
+            <label index="tt_news.tx_mblnewsevent_from" type="integer">80957200</label>
+            <label index="tt_news.tx_mblnewsevent_to" type="integer">192800740</label>
+            <label index="tt_news.tx_mblnewsevent_where" type="integer">268387961</label>
+            <label index="tt_news.tx_mblnewsevent_organizer" type="integer">231556830</label>
+        </languageKey>
+        <languageKey index="tr" type="array">
+        </languageKey>
+        <languageKey index="se" type="array">
+        </languageKey>
+        <languageKey index="pt" type="array">
+        </languageKey>
+        <languageKey index="ru" type="array">
+        </languageKey>
+        <languageKey index="ro" type="array">
+        </languageKey>
+        <languageKey index="ch" type="array">
+        </languageKey>
+        <languageKey index="sk" type="array">
+        </languageKey>
+        <languageKey index="lt" type="array">
+        </languageKey>
+        <languageKey index="is" type="array">
+        </languageKey>
+        <languageKey index="hr" type="array">
+        </languageKey>
+        <languageKey index="hu" type="array">
+        </languageKey>
+        <languageKey index="gl" type="array">
+        </languageKey>
+        <languageKey index="th" type="array">
+        </languageKey>
+        <languageKey index="gr" type="array">
+        </languageKey>
+        <languageKey index="hk" type="array">
+        </languageKey>
+        <languageKey index="eu" type="array">
+        </languageKey>
+        <languageKey index="bg" type="array">
+        </languageKey>
+        <languageKey index="br" type="array">
+        </languageKey>
+        <languageKey index="et" type="array">
+        </languageKey>
+        <languageKey index="ar" type="array">
+        </languageKey>
+        <languageKey index="he" type="array">
+        </languageKey>
+        <languageKey index="ua" type="array">
+        </languageKey>
+        <languageKey index="lv" type="array">
+        </languageKey>
+        <languageKey index="jp" type="array">
+        </languageKey>
+        <languageKey index="vn" type="array">
+        </languageKey>
+        <languageKey index="ca" type="array">
+        </languageKey>
+        <languageKey index="ba" type="array">
+        </languageKey>
+        <languageKey index="kr" type="array">
+        </languageKey>
+    </orig_hash>
+    <orig_text type="array">
+        <languageKey index="default" type="array">
+        </languageKey>
+        <languageKey index="dk" type="array">
+        </languageKey>
+        <languageKey index="de" type="array">
+        </languageKey>
+        <languageKey index="no" type="array">
+        </languageKey>
+        <languageKey index="it" type="array">
+        </languageKey>
+        <languageKey index="fr" type="array">
+        </languageKey>
+        <languageKey index="es" type="array">
+        </languageKey>
+        <languageKey index="nl" type="array">
+        </languageKey>
+        <languageKey index="cz" type="array">
+        </languageKey>
+        <languageKey index="pl" type="array">
+        </languageKey>
+        <languageKey index="si" type="array">
+        </languageKey>
+        <languageKey index="fi" type="array">
+        </languageKey>
+        <languageKey index="tr" type="array">
+        </languageKey>
+        <languageKey index="se" type="array">
+        </languageKey>
+        <languageKey index="pt" type="array">
+        </languageKey>
+        <languageKey index="ru" type="array">
+        </languageKey>
+        <languageKey index="ro" type="array">
+        </languageKey>
+        <languageKey index="ch" type="array">
+        </languageKey>
+        <languageKey index="sk" type="array">
+        </languageKey>
+        <languageKey index="lt" type="array">
+        </languageKey>
+        <languageKey index="is" type="array">
+        </languageKey>
+        <languageKey index="hr" type="array">
+        </languageKey>
+        <languageKey index="hu" type="array">
+        </languageKey>
+        <languageKey index="gl" type="array">
+        </languageKey>
+        <languageKey index="th" type="array">
+        </languageKey>
+        <languageKey index="gr" type="array">
+        </languageKey>
+        <languageKey index="hk" type="array">
+        </languageKey>
+        <languageKey index="eu" type="array">
+        </languageKey>
+        <languageKey index="bg" type="array">
+        </languageKey>
+        <languageKey index="br" type="array">
+        </languageKey>
+        <languageKey index="et" type="array">
+        </languageKey>
+        <languageKey index="ar" type="array">
+        </languageKey>
+        <languageKey index="he" type="array">
+        </languageKey>
+        <languageKey index="ua" type="array">
+        </languageKey>
+        <languageKey index="lv" type="array">
+        </languageKey>
+        <languageKey index="jp" type="array">
+        </languageKey>
+        <languageKey index="vn" type="array">
+        </languageKey>
+        <languageKey index="ca" type="array">
+        </languageKey>
+        <languageKey index="ba" type="array">
+        </languageKey>
+        <languageKey index="kr" type="array">
+        </languageKey>
+    </orig_text>
+</T3locallang>

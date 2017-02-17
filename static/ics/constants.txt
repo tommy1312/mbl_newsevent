@@ -1,0 +1,17 @@
+
+###
+# These are the default TS-constants for ICS feed from mbl_newsevent
+##
+
+plugin.tt_news {
+  # cat=plugin.tt_news/ics/999; type=text; label= ICS Page Type Number
+  mbl_newsevent.ics.pageType = 101
+    # cat=plugin.tt_news/ics/1000; type=text; label= From Date: Defines start date for ICS feed. See: http://www.gnu.org/software/tar/manual/html_chapter/tar_7.html for more info about the date format.
+  mbl_newsevent.ics.from = 1 year ago
+    # cat=plugin.tt_news/ics/1001; type=text; label= To Date: Defines end date for ICS feed. See: http://www.gnu.org/software/tar/manual/html_chapter/tar_7.html for more info about the date format.
+  mbl_newsevent.ics.to = 1 year
+    # cat=plugin.tt_news/ics/1002; type=text; label= ICS File Name: The name of the file downloaded from the ICS feed.
+  mbl_newsevent.ics.fileName = Event Calendar.ics
+    # cat=plugin.tt_news/ics/1003; type=text; label= ICS Feed Name: The name of the ICS feed included in the ICS file.
+  mbl_newsevent.ics.icsName = News Events
+}

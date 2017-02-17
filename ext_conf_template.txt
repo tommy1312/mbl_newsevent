@@ -1,0 +1,2 @@
+# cat=mbl_newsevent/1; type=boolean; label=Display Where field as multi-line
+multiLineWhere = 0

@@ -1,0 +1,115 @@
+plugin.tt_news.mbl_newsevent {
+	templateFile = {$plugin.tt_news.mbl_newsevent.templateFile}
+
+	hideEvents = 0
+
+	date_stdWrap.strftime = {$plugin.tt_news.mbl_newsevent.date_stdWrap.strftime}
+	dateLabel_stdWrap.wrap = {$plugin.tt_news.mbl_newsevent.dateLabel_stdWrap.wrap}
+	datesLabel_stdWrap.wrap = {$plugin.tt_news.mbl_newsevent.datesLabel_stdWrap.wrap}
+	toLabel_stdWrap.wrap = {$plugin.tt_news.mbl_newsevent.toLabel_stdWrap.wrap}
+	time_stdWrap.strftime = {$plugin.tt_news.mbl_newsevent.time_stdWrap.strftime}
+	where_stdWrap.wrap = {$plugin.tt_news.mbl_newsevent.where_stdWrap.wrap}
+	where_stdWrap {
+		br = 1
+	}
+	whereLabel_stdWrap.wrap = {$plugin.tt_news.mbl_newsevent.whereLabel_stdWrap.wrap}
+	organizer_stdWrap.wrap = {$plugin.tt_news.mbl_newsevent.organizer_stdWrap.wrap}
+	organizerLabel_stdWrap.wrap = {$plugin.tt_news.mbl_newsevent.organizerLabel_stdWrap.wrap}
+	enablePrice = {$plugin.tt_news.mbl_newsevent.enablePrice}
+	priceDecimals = 2
+	price_stdWrap.wrap = {$plugin.tt_news.mbl_newsevent.price_stdWrap.wrap}
+	zeroPrice_stdWrap = {$plugin.tt_news.mbl_newsevent.zeroPrice_stdWrap.wrap}
+	pricenote_stdWrap {
+		wrap = {$plugin.tt_news.mbl_newsevent.pricenote_stdWrap.wrap}
+		required = 1
+	}
+	
+	showOrganizerEmail = {$plugin.tt_news.mbl_newsevent.showOrganizerEmail}
+
+	#Can be either: month, quarter or year
+	dateSelMode = month
+	dateSelMenuNoEmpty = 0
+	dateSelTypoLink.parameter = {$plugin.tt_news.mbl_newsevent.dateSelTypoLink.parameter}
+	disableCategoriesInDateSelLinks = 0
+	dateSelMenuWithCatSelector = 0
+	dateselHeader_stdWrap.wrap = |
+	adjustTime = 0
+	adjustDate = 0
+	automaticAdjustTime = 0
+	automaticAdjustDate = 0
+
+	displayEventUntilEnd = 0
+
+	dateSelTitleCObject = COA
+	dateSelTitleCObject {
+		10 = TEXT
+		10 {
+			field = event_start
+			strftime = %B %Y
+			wrap = <strong>|</strong>
+			if {
+				value.field = event_start
+				equals.data = GPvar:tx_ttnews|event_pS
+			}
+		 }
+		20 = TEXT
+		20 {
+			field = event_start
+			strftime = %B %Y
+			if {
+				value.field = event_start
+				equals.data = GPvar:tx_ttnews|event_pS
+				negate = 1
+			}
+		}
+	}
+
+	latestShowsNewEvents = 0
+
+	enableRegistration = 0
+	registrationLink_typolink.parameter.field = tx_mblnewsevent_regurl
+	registrationLink_typolink.title.data = LLL:EXT:mbl_newsevent/locallang.xml:registerLinkLabel
+#	registrationLink_typolink {
+#		parameter.field >
+#		#parameter must be the PID or address you want to link to
+#		parameter = 8
+#		ATagParams = rel="lightbox"
+#		additionalParams.field = uid
+#		additionalParams.wrap = &powermail[tt_news]=|
+#	}
+	replaceWithClosed = 1
+	registerAvailableUntilEnd = 0
+	registrationClosed_stdWrap {
+		wrap = |
+		data = LLL:EXT:mbl_newsevent/locallang.xml:registerClosed
+	}
+
+	#For checking registration count
+	enableRegistrationsTracking = 0
+	registrationsTable =
+	#Should select ONE field only. Additional fields will be ignored.
+	registrationsSelect = COUNT(*)
+	#registrationsSelect = registeredCount
+	registrationsWhere =
+
+	disableIfFull = 1
+	registrationFull_stdWrap {
+		wrap = |
+		data = LLL:EXT:mbl_newsevent/locallang.xml:registerFull
+	}
+
+	displayMaxRegistrations = 1
+	maxRegistrations_stdWrap.wrap = |
+	maxRegistrationsLabel_stdWrap.wrap = |
+
+	displayPlacesFree = 1
+	placesFree_stdWrap.wrap = |
+	placesFreeLabel_stdWrap.wrap = |
+
+	displayCurrentRegistrations = 1
+	currentRegistrations_stdWrap.wrap = |
+	currentRegistrationsLabel_stdWrap.wrap = |
+
+	#display info that the event is "full" or that it's "closed" or "both"/empty if both should be displayed.
+	closedFullPriority = closed
+}

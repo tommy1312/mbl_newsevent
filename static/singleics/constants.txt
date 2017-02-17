@@ -1,0 +1,6 @@
+plugin.tt_news {
+  # cat=plugin.tt_news/singleics/999; type=text; label= SINGLE_ICS Page Type Number
+  mbl_newsevent.singleics.pageType = 102
+    # cat=plugin.tt_news/singleics/1002; type=text; label= SINGLE_ICS File Name: The name of the ICS file
+  mbl_newsevent.singleics.fileName = Event.ics
+}

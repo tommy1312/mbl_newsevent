@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h1>News Event Template</h1>
+<p>The following are the lines added to news articles. They are replaced with
+the new ###EVENT_WRAP### marker in the tt_news template. This change needs to be done
+by hand for the extension to work.</p>
+<p>For event registration, you may also want to add the marker ###&shy;EVENT_REGISTER_WRAP&shy;### where you want the registration information to appear. It (or any registration related marker) can also be within the event wraps, such as ###&shy;ONE_DAY_EVENT&shy;### and the like.</p>
+<h3>Markers:</h3>
+<p>###EVENT_FROM_DATE### - The start date for the event<br />
+###EVENT_FROM_TIME### - The start time for the event<br />
+###EVENT_TO_DATE### - The end date for the event<br />
+###EVENT_TO_TIME### - The end time for the event<br />
+###EVENT_LOCATION### - The string explaining where the event will take place (use EVENT_LOCATION_INFO instead).<br />
+###EVENT_LOCATION_INFO### - Insert the EVENT_LOCATION_WRAP with information about where the event will take place<br />
+###EVENT_ORGANIZER### - The event organizer (use EVENT_ORGANIZER_INFO instead)<br />
+###EVENT_ORGANIZER_INFO### - Inserts the EVENT_ORGANIZER_WRAP subpart with information about the organizer<br />
+###REGISTER_LINK### - The registration link if event registration is enabled. This marker is configurable through TypoScript (see manual).<br />
+###REGISTER_START_DATE### - The start date for the event registration.<br />
+###REGISTER_START_TIME### - The start time for the event registration.<br />
+###REGISTER_END_DATE### - The end date for the event registration.<br />
+###REGISTER_END_TIME### - The end time for the event registration.<br />
+###EVENT_PRICE### - The price for the event (use EVENT_PRICE_INFO instead)<br />
+###EVENT_PRICE_NOTE### - Text explaining the price (e.g. "Members 50% off") (use EVENT_PRICE_INFO instead)<br />
+###EVENT_PRICE_INFO### - Inserts the EVENT_PRICE_WRAP subpart with information about price<br />
+###EVENT_SINGLE_ICS_LINK### - Link to downloading single event info as ICS file. <br />
+###REGISTER_REGISTEREDCOUNT### - The number of registered. <br />
+###REGISTER_FREECOUNT### - The number of free places. <br />
+###REGISTER_MAX### - The max number of registrations. <br />
+</p>
+
+<h3>Localizeable Markers (Markers for text strings, that is)</h3>
+<p>
+###EVENT_DATE_TEXT### - A text like "Event date:" (One-day event)<br />
+###EVENT_DATES_TEXT### - A text like "Event dates:" (Multiple day event)<br />
+###EVENT_LOCATION_TEXT### - A text like "Location:"<br />
+###EVENT_ORGANIZER_TEXT### - A text like "Organizer:"<br />
+###REGISTER_START_LABEL### - A text like "Registration opens:"<br />
+###REGISTER_END_LABEL### - A text like "Registration closes:"<br />
+###REGISTER_CLOSED_LABEL### - A text like "Registration has closed".<br />
+###EVENT_PRICE_LABEL### - A text like "Price:".<br />
+###EVENT_PRICE_NOTE_LABEL### - A text like "Price note:"<br />
+###REGISTER_REGISTEREDCOUNT_LABEL### - A text like "Registrations:"<br />
+###REGISTER_FREECOUNT_LABEL### - A text like "Places free:"<br />
+###REGISTER_MAX_LABEL### - A text like "Max registrations:"<br />
+###REGISTER_FULL_LABEL### - A text like "The event is full.".
+</p>
+
+<!-- ###ONE_DAY_EVENT### begin
+	Subpart for event inclusion for one-day events
+-->
+<span class="mbl_newsevent_singledayevent"><strong>###EVENT_DATE_TEXT### ###EVENT_FROM_DATE### ###EVENT_FROM_TIME### ###EVENT_TO_TEXT### ###EVENT_TO_TIME###  &nbsp;  ###EVENT_ORGANIZER_INFO### ###EVENT_LOCATION_INFO### ###EVENT_PRICE_INFO###</strong> ###EVENT_SINGLE_ICS_LINK###</span>
+<!-- ###ONE_DAY_EVENT### end -->
+
+<!-- ###ONE_DAY_EVENT_NO_TIME### begin
+	Subpart for event inclusion for one-day events without time
+-->
+<span class="mbl_newsevent_singledayevent"><strong>###EVENT_DATE_TEXT### ###EVENT_FROM_DATE### ###EVENT_TO_TEXT###  &nbsp;  ###EVENT_ORGANIZER_INFO### ###EVENT_LOCATION_INFO### ###EVENT_PRICE_INFO###</strong> ###EVENT_SINGLE_ICS_LINK###</span>
+<!-- ###ONE_DAY_EVENT_NO_TIME### end -->
+
+<!-- ###NO_END_EVENT### begin
+	Subpart for event inclusion for one-day events
+-->
+<span class="mbl_newsevent_noendevent"><strong>###EVENT_DATES_TEXT### ###EVENT_FROM_DATE### ###EVENT_FROM_TIME###  &nbsp;  ###EVENT_ORGANIZER_INFO### ###EVENT_LOCATION_INFO### ###EVENT_PRICE_INFO###</strong> ###EVENT_SINGLE_ICS_LINK###</span>
+<!-- ###NO_END_EVENT### end -->
+
+<!-- ###MULTIPLE_DAY_EVENT### begin
+	Subpart for event inclusion for one-day events
+-->
+<span class="mbl_newsevent_multidayevent"><strong>###EVENT_DATES_TEXT### ###EVENT_FROM_DATE### ###EVENT_FROM_TIME### ###EVENT_TO_TEXT### ###EVENT_TO_DATE### ###EVENT_TO_TIME###  &nbsp;  ###EVENT_ORGANIZER_INFO### ###EVENT_LOCATION_INFO### ###EVENT_PRICE_INFO###</strong> ###EVENT_SINGLE_ICS_LINK###</span>
+<!-- ###MULTIPLE_DAY_EVENT### end -->
+
+<!-- ###MULTIPLE_DAY_EVENT_NO_TIME### begin
+	Subpart for event inclusion where no time is given
+-->
+<span class="mbl_newsevent_multidayevent"><strong>###EVENT_DATES_TEXT### ###EVENT_FROM_DATE### ###EVENT_TO_TEXT### ###EVENT_TO_DATE### &nbsp; ###EVENT_ORGANIZER_INFO### ###EVENT_LOCATION_INFO### ###EVENT_PRICE_INFO###</strong> ###EVENT_SINGLE_ICS_LINK###</span>
+<!-- ###MULTIPLE_DAY_EVENT_NO_TIME### end -->
+
+
+<!-- ###EVENT_PRICE_WRAP### begin
+	Wrap for price information -->
+<span class="mbl_newsevent_price">###EVENT_PRICE_LABEL### ###EVENT_PRICE### ###EVENT_PRICE_NOTE###</span>
+<!-- ###EVENT_PRICE_WRAP### end -->
+
+<!-- ###EVENT_LOCATION_WRAP### begin
+	Wrap for where string -->
+<span class="mbl_newsevent_location">###EVENT_LOCATION_TEXT### ###EVENT_LOCATION###</span>
+<!-- ###EVENT_LOCATION_WRAP### end -->
+
+<!-- ###EVENT_ORGANIZER_WRAP### begin
+ Wrap for organizer information -->
+<span class="mbl_newsevent_organizer">###EVENT_ORGANIZER_TEXT### ###EVENT_ORGANIZER###</span>
+<!-- ###EVENT_ORGANIZER_WRAP### end -->
+
+
+<!-- ###DATESEL_LIST### begin -->
+<h3>###DATESEL_HEADER###</h3>
+<p class="mbl_newsevent_datesellist">
+<!-- ###ITEM### begin -->
+<!-- ###LINK_ITEM### -->###EVENT_PERIOD_NAME### (###EVENT_PERIOD_COUNT_LABEL### ###EVENT_PERIOD_COUNT###)<!-- ###LINK_ITEM### --> &nbsp;
+<!-- ###ITEM### end -->
+</p>
+<!-- ###DATESEL_LIST### end -->
+
+
+
+<!-- ###EVENT_REGISTER### begin 
+	Event registration subpart with all info available -->
+<span class="mbl_newsevent_register">
+###REGISTER_START_LABEL### ###REGISTER_START_DATE### ###REGISTER_START_TIME###,
+###REGISTER_END_LABEL### ###REGISTER_END_DATE### ###REGISTER_END_TIME###
+###REGISTER_REGISTEREDCOUNT_LABEL### ###REGISTER_REGISTEREDCOUNT###
+###REGISTER_FREECOUNT_LABEL### ###REGISTER_FREECOUNT###
+###REGISTER_MAX_LABEL### ###REGISTER_MAX###
+###REGISTER_CLOSED_LABEL###
+###REGISTER_FULL_LABEL###
+###REGISTER_LINK###
+</span>
+<!-- ###EVENT_REGISTER### end -->
+
+<!-- ###EVENT_REGISTER_NO_START### begin  
+	Event registration subpart with no start date or time-->
+<span class="mbl_newsevent_register">
+###REGISTER_END_LABEL### ###REGISTER_END_DATE### ###REGISTER_END_TIME###
+###REGISTER_REGISTEREDCOUNT_LABEL### ###REGISTER_REGISTEREDCOUNT###
+###REGISTER_FREECOUNT_LABEL### ###REGISTER_FREECOUNT###
+###REGISTER_MAX_LABEL### ###REGISTER_MAX###
+###REGISTER_CLOSED_LABEL###
+###REGISTER_FULL_LABEL###
+###REGISTER_LINK###
+</span>
+<!-- ###EVENT_REGISTER_NO_START### end -->
+
+<!-- ###EVENT_REGISTER_NO_TIME### begin  
+	Event registration subpart with no time given-->
+<span class="mbl_newsevent_register">
+###REGISTER_START_LABEL### ###REGISTER_START_DATE###,
+###REGISTER_END_LABEL### ###REGISTER_END_DATE###
+###REGISTER_REGISTEREDCOUNT_LABEL### ###REGISTER_REGISTEREDCOUNT###
+###REGISTER_FREECOUNT_LABEL### ###REGISTER_FREECOUNT###
+###REGISTER_MAX_LABEL### ###REGISTER_MAX###
+###REGISTER_CLOSED_LABEL###
+###REGISTER_FULL_LABEL###
+###REGISTER_LINK###
+</span>
+<!-- ###EVENT_REGISTER_NO_TIME### end -->
+
+<!-- ###EVENT_REGISTER_NO_START_NO_TIME### begin  
+	Event registration subpart with no time given and no start date-->
+<span class="mbl_newsevent_register">
+###REGISTER_END_LABEL### ###REGISTER_END_DATE###
+###REGISTER_REGISTEREDCOUNT_LABEL### ###REGISTER_REGISTEREDCOUNT###
+###REGISTER_FREECOUNT_LABEL### ###REGISTER_FREECOUNT###
+###REGISTER_MAX_LABEL### ###REGISTER_MAX###
+###REGISTER_CLOSED_LABEL###
+###REGISTER_FULL_LABEL###
+###REGISTER_LINK###
+</span>
+<!-- ###EVENT_REGISTER_NO_START_NO_TIME### end -->
+
+<!-- ###EVENT_REGISTER_NO_END### begin  
+	Event registration subpart with no given end date (or end date is same as event start) -->
+<span class="mbl_newsevent_register">
+###REGISTER_START_LABEL### ###REGISTER_START_DATE### ###REGISTER_START_TIME###
+###REGISTER_REGISTEREDCOUNT_LABEL### ###REGISTER_REGISTEREDCOUNT###
+###REGISTER_FREECOUNT_LABEL### ###REGISTER_FREECOUNT###
+###REGISTER_MAX_LABEL### ###REGISTER_MAX###
+###REGISTER_CLOSED_LABEL###
+###REGISTER_FULL_LABEL###
+###REGISTER_LINK###
+</span>
+<!-- ###EVENT_REGISTER_NO_END### end -->
+
+<!-- ###EVENT_REGISTER_NO_END_NO_TIME### begin  
+	Event registration subpart with no given end date and no time (or end date is same as event start) -->
+<span class="mbl_newsevent_register">
+###REGISTER_START_LABEL### ###REGISTER_START_DATE###
+###REGISTER_REGISTEREDCOUNT_LABEL### ###REGISTER_REGISTEREDCOUNT###
+###REGISTER_FREECOUNT_LABEL### ###REGISTER_FREECOUNT###
+###REGISTER_MAX_LABEL### ###REGISTER_MAX###
+###REGISTER_CLOSED_LABEL###
+###REGISTER_FULL_LABEL###
+###REGISTER_LINK###
+</span>
+<!-- ###EVENT_REGISTER_NO_END_NO_TIME### end -->
+
+<!-- ###EVENT_REGISTER_NO_END_NO_START### begin  
+	Event registration subpart with no given start and end date (or end date is same as event start) -->
+<span class="mbl_newsevent_register">
+###REGISTER_REGISTEREDCOUNT_LABEL### ###REGISTER_REGISTEREDCOUNT###
+###REGISTER_FREECOUNT_LABEL### ###REGISTER_FREECOUNT###
+###REGISTER_MAX_LABEL### ###REGISTER_MAX###
+###REGISTER_CLOSED_LABEL###
+###REGISTER_FULL_LABEL###
+###REGISTER_LINK###
+</span>
+<!-- ###EVENT_REGISTER_NO_END_NO_START### end -->
+
+<!-- ###EVENT_REGISTER_CLOSED### begin 
+	What to show when the event registration is closed -->
+<span class="mbl_newsevent_registerclosed">
+###REGISTER_CLOSED_LABEL###
+</span>
+<!-- ###EVENT_REGISTER_CLOSED### end -->
+
+</body>
+</html>

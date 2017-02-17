@@ -1,0 +1,50 @@
+plugin.tt_news {
+
+    # cat=plugin.tt_news/file/900; type=file[html,htm,tmpl,txt]; label= Event Template File: News Event template file. See EXT:mbl_newsevent/event_template.tmpl for an example.
+  mbl_newsevent.templateFile = EXT:mbl_newsevent/event_template.tmpl
+    # cat=plugin.tt_news/typo/900; type=text; label= Event Date Format: The format event dates are shown in.
+  mbl_newsevent.date_stdWrap.strftime = %x
+    # cat=plugin.tt_news/typo/901; type=text; label= Event Time Format: The format event times are shown in.
+  mbl_newsevent.time_stdWrap.strftime = %H:%M
+    # cat=plugin.tt_news/typo/902; type=wrap; label= Event Location Wrap: This wrap is used for the Event Location information.
+  mbl_newsevent.where_stdWrap.wrap = |
+    # cat=plugin.tt_news/typo/903; type=wrap; label= Event Organizer Wrap: This wrap is used for the Event Organizer.
+  mbl_newsevent.organizer_stdWrap.wrap = |
+    # cat=plugin.tt_news/enable/901; type=boolean; label= Show Event Organizer E-mail: Toggles showing the Event Organizer's e-mail address in listings.
+  mbl_newsevent.showOrganizerEmail = 1
+  # cat=plugin.tt_news/typo/900; type=text; label= Which page should links in the date selector point to?
+  mbl_newsevent.dateSelTypoLink.parameter =
+
+   # cat=plugin.tt_news/enable/904; type=boolean; label= Enable event pricing
+  mbl_newsevent.enablePrice = 0
+
+   # cat=plugin.tt_news/typo/905; type=wrap; label= Event Price Wrap: This wrap is used for the Event Price.
+  mbl_newsevent.price_stdWrap.wrap = |
+
+   # cat=plugin.tt_news/typo/906; type=wrap; label= Event is free wrap: This wrap is used when the event price is zero.
+  tt_news.mbl_newsevent.zeroPrice_stdWrap.wrap = |
+
+   # cat=plugin.tt_news/typo/907; type=wrap; label= Event Price Info Wrap: This wrap is used for the Event Price Info Text.
+  mbl_newsevent.pricenote_stdWrap.wrap = (|)
+  
+
+  
+   # cat=plugin.tt_news/typo/908; type=wrap; label= Date Text Label Wrap: This wrap is used for the Date Text Label.
+  mbl_newsevent.dateLabel_stdWrap.wrap = |
+  
+  # cat=plugin.tt_news/typo/909; type=wrap; label= Dates Text Label Wrap: This wrap is used for the Dates Text Label.
+  mbl_newsevent.datesLabel_stdWrap.wrap = |
+  
+  # cat=plugin.tt_news/typo/910; type=wrap; label= To Text Label Wrap: This wrap is used for the To Text Label.
+  mbl_newsevent.toLabel_stdWrap.wrap = |
+  
+  # cat=plugin.tt_news/typo/911; type=wrap; label= Where Text Label Wrap: This wrap is used for the Where Text Label.
+  mbl_newsevent.whereLabel_stdWrap.wrap = |
+  
+  # cat=plugin.tt_news/typo/912; type=wrap; label= Organizer Text Label Wrap: This wrap is used for the Organizer Text Label.
+  mbl_newsevent.organizerLabel_stdWrap.wrap = |
+  
+}
+
+
+
