@@ -1,7 +1,7 @@
 plugin.tt_news {
 
-    # cat=plugin.tt_news/file/900; type=file[html,htm,tmpl,txt]; label= Event Template File: News Event template file. See EXT:mbl_newsevent/event_template.tmpl for an example.
-  mbl_newsevent.templateFile = EXT:mbl_newsevent/event_template.tmpl
+    # cat=plugin.tt_news/file/900; type=file[html,htm,tmpl,txt]; label= Event Template File: News Event template file. See EXT:mbl_newsevent/Resources/event_template.tmpl for an example.
+  mbl_newsevent.templateFile = EXT:mbl_newsevent/Resources/event_template.tmpl
     # cat=plugin.tt_news/typo/900; type=text; label= Event Date Format: The format event dates are shown in.
   mbl_newsevent.date_stdWrap.strftime = %x
     # cat=plugin.tt_news/typo/901; type=text; label= Event Time Format: The format event times are shown in.

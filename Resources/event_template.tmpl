@@ -16,18 +16,15 @@ by hand for the extension to work.</p>
 ###EVENT_FROM_TIME### - The start time for the event<br />
 ###EVENT_TO_DATE### - The end date for the event<br />
 ###EVENT_TO_TIME### - The end time for the event<br />
-###EVENT_LOCATION### - The string explaining where the event will take place (use EVENT_LOCATION_INFO instead).<br />
-###EVENT_LOCATION_INFO### - Insert the EVENT_LOCATION_WRAP with information about where the event will take place<br />
-###EVENT_ORGANIZER### - The event organizer (use EVENT_ORGANIZER_INFO instead)<br />
-###EVENT_ORGANIZER_INFO### - Inserts the EVENT_ORGANIZER_WRAP subpart with information about the organizer<br />
+###EVENT_WHERE### ###EVENT_PRICE_LABEL### ###EVENT_PRICE### ###EVENT_PRICE_NOTE### - The string explainging where the event will take place<br />
+###EVENT_ORGANIZER### ###EVENT_WHERE_TEXT### ###EVENT_WHERE### ###EVENT_PRICE_LABEL### ###EVENT_PRICE### ###EVENT_PRICE_NOTE### - The event organizer<br />
 ###REGISTER_LINK### - The registration link if event registration is enabled. This marker is configurable through TypoScript (see manual).<br />
 ###REGISTER_START_DATE### - The start date for the event registration.<br />
 ###REGISTER_START_TIME### - The start time for the event registration.<br />
 ###REGISTER_END_DATE### - The end date for the event registration.<br />
 ###REGISTER_END_TIME### - The end time for the event registration.<br />
-###EVENT_PRICE### - The price for the event (use EVENT_PRICE_INFO instead)<br />
-###EVENT_PRICE_NOTE### - Text explaining the price (e.g. "Members 50% off") (use EVENT_PRICE_INFO instead)<br />
-###EVENT_PRICE_INFO### - Inserts the EVENT_PRICE_WRAP subpart with information about price<br />
+###EVENT_PRICE### - The price for the event.<br />
+###EVENT_PRICE_NOTE### - Text explaining the price (e.g. "Members 50% off").<br />
 ###EVENT_SINGLE_ICS_LINK### - Link to downloading single event info as ICS file. <br />
 ###REGISTER_REGISTEREDCOUNT### - The number of registered. <br />
 ###REGISTER_FREECOUNT### - The number of free places. <br />
@@ -38,7 +35,7 @@ by hand for the extension to work.</p>
 <p>
 ###EVENT_DATE_TEXT### - A text like "Event date:" (One-day event)<br />
 ###EVENT_DATES_TEXT### - A text like "Event dates:" (Multiple day event)<br />
-###EVENT_LOCATION_TEXT### - A text like "Location:"<br />
+###EVENT_WHERE_TEXT### - A text like "Location:"<br />
 ###EVENT_ORGANIZER_TEXT### - A text like "Organizer:"<br />
 ###REGISTER_START_LABEL### - A text like "Registration opens:"<br />
 ###REGISTER_END_LABEL### - A text like "Registration closes:"<br />
@@ -54,48 +51,39 @@ by hand for the extension to work.</p>
 <!-- ###ONE_DAY_EVENT### begin
 	Subpart for event inclusion for one-day events
 -->
-<span class="mbl_newsevent_singledayevent"><strong>###EVENT_DATE_TEXT### ###EVENT_FROM_DATE### ###EVENT_FROM_TIME### ###EVENT_TO_TEXT### ###EVENT_TO_TIME###  &nbsp;  ###EVENT_ORGANIZER_INFO### ###EVENT_LOCATION_INFO### ###EVENT_PRICE_INFO###</strong> ###EVENT_SINGLE_ICS_LINK###</span>
+<span class="mbl_newsevent_singledayevent"><strong>###EVENT_DATE_TEXT### ###EVENT_FROM_DATE### ###EVENT_FROM_TIME### ###EVENT_TO_TEXT### ###EVENT_TO_TIME### - ###EVENT_ORGANIZER_TEXT### ###EVENT_ORGANIZER### ###EVENT_WHERE_TEXT### ###EVENT_WHERE### ###EVENT_PRICE_LABEL### ###EVENT_PRICE### ###EVENT_PRICE_NOTE###</strong> ###EVENT_SINGLE_ICS_LINK###</span>
 <!-- ###ONE_DAY_EVENT### end -->
 
 <!-- ###ONE_DAY_EVENT_NO_TIME### begin
 	Subpart for event inclusion for one-day events without time
 -->
-<span class="mbl_newsevent_singledayevent"><strong>###EVENT_DATE_TEXT### ###EVENT_FROM_DATE### ###EVENT_TO_TEXT###  &nbsp;  ###EVENT_ORGANIZER_INFO### ###EVENT_LOCATION_INFO### ###EVENT_PRICE_INFO###</strong> ###EVENT_SINGLE_ICS_LINK###</span>
+<span class="mbl_newsevent_singledayevent"><strong>###EVENT_DATE_TEXT### ###EVENT_FROM_DATE### ###EVENT_TO_TEXT### - ###EVENT_ORGANIZER_TEXT### ###EVENT_ORGANIZER### ###EVENT_WHERE_TEXT### ###EVENT_WHERE### ###EVENT_PRICE_LABEL### ###EVENT_PRICE### ###EVENT_PRICE_NOTE###</strong> ###EVENT_SINGLE_ICS_LINK###</span>
 <!-- ###ONE_DAY_EVENT_NO_TIME### end -->
 
 <!-- ###NO_END_EVENT### begin
 	Subpart for event inclusion for one-day events
 -->
-<span class="mbl_newsevent_noendevent"><strong>###EVENT_DATES_TEXT### ###EVENT_FROM_DATE### ###EVENT_FROM_TIME###  &nbsp;  ###EVENT_ORGANIZER_INFO### ###EVENT_LOCATION_INFO### ###EVENT_PRICE_INFO###</strong> ###EVENT_SINGLE_ICS_LINK###</span>
+<span class="mbl_newsevent_noendevent"><strong>###EVENT_DATES_TEXT### ###EVENT_FROM_DATE### ###EVENT_FROM_TIME### - ###EVENT_ORGANIZER_TEXT### ###EVENT_ORGANIZER### ###EVENT_WHERE_TEXT### ###EVENT_WHERE### ###EVENT_PRICE_LABEL### ###EVENT_PRICE### ###EVENT_PRICE_NOTE###</strong> ###EVENT_SINGLE_ICS_LINK###</span>
 <!-- ###NO_END_EVENT### end -->
 
 <!-- ###MULTIPLE_DAY_EVENT### begin
 	Subpart for event inclusion for one-day events
 -->
-<span class="mbl_newsevent_multidayevent"><strong>###EVENT_DATES_TEXT### ###EVENT_FROM_DATE### ###EVENT_FROM_TIME### ###EVENT_TO_TEXT### ###EVENT_TO_DATE### ###EVENT_TO_TIME###  &nbsp;  ###EVENT_ORGANIZER_INFO### ###EVENT_LOCATION_INFO### ###EVENT_PRICE_INFO###</strong> ###EVENT_SINGLE_ICS_LINK###</span>
+<span class="mbl_newsevent_multidayevent"><strong>###EVENT_DATES_TEXT### ###EVENT_FROM_DATE### ###EVENT_FROM_TIME### ###EVENT_TO_TEXT### ###EVENT_TO_DATE### ###EVENT_TO_TIME### - ###EVENT_ORGANIZER_TEXT### ###EVENT_ORGANIZER### ###EVENT_WHERE_TEXT### ###EVENT_WHERE### ###EVENT_PRICE_LABEL### ###EVENT_PRICE### ###EVENT_PRICE_NOTE###</strong> ###EVENT_SINGLE_ICS_LINK###</span>
 <!-- ###MULTIPLE_DAY_EVENT### end -->
 
 <!-- ###MULTIPLE_DAY_EVENT_NO_TIME### begin
 	Subpart for event inclusion where no time is given
 -->
-<span class="mbl_newsevent_multidayevent"><strong>###EVENT_DATES_TEXT### ###EVENT_FROM_DATE### ###EVENT_TO_TEXT### ###EVENT_TO_DATE### &nbsp; ###EVENT_ORGANIZER_INFO### ###EVENT_LOCATION_INFO### ###EVENT_PRICE_INFO###</strong> ###EVENT_SINGLE_ICS_LINK###</span>
+<span class="mbl_newsevent_multidayevent"><strong>###EVENT_DATES_TEXT### ###EVENT_FROM_DATE### ###EVENT_TO_TEXT### ###EVENT_TO_DATE### - ###EVENT_ORGANIZER_TEXT### ###EVENT_ORGANIZER### ###EVENT_WHERE_TEXT### ###EVENT_WHERE### ###EVENT_PRICE_LABEL### ###EVENT_PRICE### ###EVENT_PRICE_NOTE###</strong> ###EVENT_SINGLE_ICS_LINK###</span>
 <!-- ###MULTIPLE_DAY_EVENT_NO_TIME### end -->
 
 
-<!-- ###EVENT_PRICE_WRAP### begin
-	Wrap for price information -->
-<span class="mbl_newsevent_price">###EVENT_PRICE_LABEL### ###EVENT_PRICE### ###EVENT_PRICE_NOTE###</span>
-<!-- ###EVENT_PRICE_WRAP### end -->
-
-<!-- ###EVENT_LOCATION_WRAP### begin
+<!-- ###EVENT_WHERE_WRAP### begin
 	Wrap for where string -->
-<span class="mbl_newsevent_location">###EVENT_LOCATION_TEXT### ###EVENT_LOCATION###</span>
-<!-- ###EVENT_LOCATION_WRAP### end -->
+<span class="mbl_newsevent_eventwhere">###EVENT_WHERE_TEXT### ###EVENT_WHERE### ###EVENT_PRICE_LABEL### ###EVENT_PRICE### ###EVENT_PRICE_NOTE###</span>
+<!-- ###EVENT_WHERE_WRAP### end -->
 
-<!-- ###EVENT_ORGANIZER_WRAP### begin
- Wrap for organizer information -->
-<span class="mbl_newsevent_organizer">###EVENT_ORGANIZER_TEXT### ###EVENT_ORGANIZER###</span>
-<!-- ###EVENT_ORGANIZER_WRAP### end -->
 
 
 <!-- ###DATESEL_LIST### begin -->

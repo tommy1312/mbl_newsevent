@@ -68,7 +68,7 @@ plugin.tt_news.mbl_newsevent {
 
 	enableRegistration = 0
 	registrationLink_typolink.parameter.field = tx_mblnewsevent_regurl
-	registrationLink_typolink.title.data = LLL:EXT:mbl_newsevent/locallang.xml:registerLinkLabel
+	registrationLink_typolink.title.data = LLL:EXT:mbl_newsevent/Resources/locallang.xml:registerLinkLabel
 #	registrationLink_typolink {
 #		parameter.field >
 #		#parameter must be the PID or address you want to link to
@@ -81,7 +81,7 @@ plugin.tt_news.mbl_newsevent {
 	registerAvailableUntilEnd = 0
 	registrationClosed_stdWrap {
 		wrap = |
-		data = LLL:EXT:mbl_newsevent/locallang.xml:registerClosed
+		data = LLL:EXT:mbl_newsevent/Resources/locallang.xml:registerClosed
 	}
 
 	#For checking registration count
@@ -95,7 +95,7 @@ plugin.tt_news.mbl_newsevent {
 	disableIfFull = 1
 	registrationFull_stdWrap {
 		wrap = |
-		data = LLL:EXT:mbl_newsevent/locallang.xml:registerFull
+		data = LLL:EXT:mbl_newsevent/Resources/locallang.xml:registerFull
 	}
 
 	displayMaxRegistrations = 1

@@ -119,25 +119,6 @@
         <languageKey index="es" type="array">
         </languageKey>
         <languageKey index="nl" type="array">
-			<label index="tt_news.tx_mblnewsevent_isevent">Is evenement</label>
-            <label index="tt_news.tx_mblnewsevent_from">Start datum</label>
-            <label index="tt_news.tx_mblnewsevent_fromtime">Start tijd</label>
-            <label index="tt_news.tx_mblnewsevent_to">Eind datum</label>
-            <label index="tt_news.tx_mblnewsevent_totime">Eind tijd</label>
-            <label index="tt_news.tx_mblnewsevent_where">Waar (Stad, Land)</label>
-            <label index="tt_news.tx_mblnewsevent_organizer">Organisator</label>
-            <label index="tt_news.tx_mblnewsevent_orderby_from">Evenement start</label>
-            <label index="tt_news.tx_mblnewsevent_orderby_to">Evenement eind</label>
-            <label index="eventEditSection">Evenement informatie</label>
-            <label index="accessSection">Toegang</label>
-            <label index="tt_news.tx_mblnewsevent_regfrom">Registratie start datum</label>
-            <label index="tt_news.tx_mblnewsevent_regfromtime">Registratie start tijd</label>
-            <label index="tt_news.tx_mblnewsevent_regto">Registratie eind datum</label>
-            <label index="tt_news.tx_mblnewsevent_regtotime">Registratie eind tijd</label>
-            <label index="tt_news.tx_mblnewsevent_hasregistration">Sta registratie toe</label>
-            <label index="tt_news.tx_mblnewsevent_regurl">Registratie URL</label>
-            <label index="tt_news.tx_mblnewsevent_price">Prijs</label>
-            <label index="tt_news.tx_mblnewsevent_pricenote">Prijs informatie tekst (b.v. "leden 50% korting")</label>
         </languageKey>
         <languageKey index="cz" type="array">
         </languageKey>

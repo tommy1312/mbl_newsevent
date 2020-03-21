@@ -1,0 +1,39 @@
+plugin.tt_news.mbl_newsevent {
+  #Settings for SINGLE_ICS feed
+
+  enableSingleICSLink = 1
+
+  singleICSLink_stdWrap {
+    innerWrap = |
+    innerWrap.prepend = IMAGE
+    innerWrap.prepend.file = EXT:mbl_newsevent/Resources/singleics_download.gif
+
+    wrap = <span class="mbl_newsevent_singleICSDownload">|</span>
+    typolink {
+      parameter.data = page : uid
+      additionalParams.field = uid
+      additionalParams.wrap = &tx_ttnews[tt_news]=|&type={$plugin.tt_news.mbl_newsevent.singleics.pageType}
+    }
+  }
+
+  singleics {
+    templateFile = EXT:mbl_newsevent/Resources/ics_template.tmpl
+  }
+}
+
+singleicsevent = PAGE
+singleicsevent {
+  typeNum = {$plugin.tt_news.mbl_newsevent.singleics.pageType}
+  10 < plugin.tt_news
+  10.pid_list >
+  10.pid_list = {$plugin.tt_news.pid_list}
+  10.singlePid = {$plugin.tt_news.singlePid}
+  10.defaultCode = SINGLE_ICS
+  config {
+    disableAllHeaderCode = 1
+    additionalHeaders.10.header = Content-type:text/calendar; charset=utf-8
+    additionalHeaders.20.header = Content-Disposition: attachment; filename="{$plugin.tt_news.mbl_newsevent.singleics.fileName}"
+    no_cache = 1
+    xhtml_cleaning = 0
+  }
+}

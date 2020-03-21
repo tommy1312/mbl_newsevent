@@ -1,0 +1,26 @@
+plugin.tt_news.mbl_newsevent {
+  #Settings for ICS feed
+  ics {
+    templateFile = EXT:mbl_newsevent/Resources/ics_template.tmpl
+    from = {$plugin.tt_news.mbl_newsevent.ics.from}
+    to = {$plugin.tt_news.mbl_newsevent.ics.to}
+    icsName = {$plugin.tt_news.mbl_newsevent.ics.icsName}
+  }
+}
+
+icsevents = PAGE
+icsevents {
+  typeNum = {$plugin.tt_news.mbl_newsevent.ics.pageType}
+  10 < plugin.tt_news
+  10.pid_list >
+  10.pid_list = {$plugin.tt_news.pid_list}
+  10.singlePid = {$plugin.tt_news.singlePid}
+  10.defaultCode = ICS
+  config {
+    disableAllHeaderCode = 1
+    additionalHeaders.10.header = Content-type:text/calendar; charset=utf-8
+    additionalHeaders.20.header = Content-Disposition: attachment; filename="{$plugin.tt_news.mbl_newsevent.ics.fileName}"
+    no_cache = 1
+    xhtml_cleaning = 0
+  }
+}

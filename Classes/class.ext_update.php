@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2014 Mathias Bolt Lesniak,
+*  (c) 2009 Mathias Bolt Lesniak, 
 *  All rights reserved
 *
 *  This script is part of the Typo3 project. The Typo3 project is

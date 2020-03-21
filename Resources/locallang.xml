@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <description>Front end language strings</description>
+        <type>module</type>
+        <csh_table></csh_table>
+        <labelContext type="array">
+        </labelContext>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="from">From</label>
+            <label index="to">to</label>
+            <label index="event_dates">Event dates:</label>
+            <label index="event_date">Event date:</label>
+            <label index="location">Location:</label>
+            <label index="quarter1">First quarter</label>
+            <label index="quarter2">Second quarter</label>
+            <label index="quarter3">Third quarter</label>
+            <label index="quarter4">Fourth quarter</label>
+            <label index="months">Array</label>
+            <label index="select_date">Select a date</label>
+            <label index="previous">Previous</label>
+            <label index="next">Next</label>
+            <label index="organizer">Organizer:</label>
+            <label index="dateselHeader">Select a date</label>
+            <label index="dateSelItemItems">Items:</label>
+            <label index="registerLinkLabel">Register</label>
+            <label index="registerStartLabel">Registration opens:</label>
+            <label index="registerEndLabel">Registration closes:</label>
+            <label index="registerClosed">Registration has closed.</label>
+            <label index="price">Price:</label>
+            <label index="priceNote">Price note:</label>
+            <label index="freePrice">Free</label>
+			<label index="downloadSingleICS">Add to Calendar</label>
+			<label index="registeredCount">Registrations:</label>
+			<label index="registeredFreeCount">Places free:</label>
+			<label index="registeredMax">Max registrations:</label>
+			<label index="registeredUnlimited">Unlimited</label>
+			<label index="registerFull">The event is full.</label>
+        </languageKey>
+		<languageKey index="dk" type="array">
+			<label index="dateSelItemItems">Punkter:</label>
+			<label index="dateselHeader">Vælg en dato</label>
+			<label index="event_date">Kursus dato:</label>
+			<label index="event_dates">Kursus datoer:</label>
+			<label index="from">Fra</label>
+			<label index="location">Sted:</label>
+			<label index="months">måneder</label>
+			<label index="next">Næste</label>
+			<label index="organizer">Arrangør:</label>
+			<label index="previous">Forrige</label>
+			<label index="quarter1">Første kvartal</label>
+			<label index="quarter2">Andet kvartal</label>
+			<label index="quarter3">Tredie kvartal</label>
+			<label index="quarter4">Fjerde kvartal</label>
+			<label index="registerClosed">Tilmelding er lukket.</label>
+			<label index="registerEndLabel">Tilmeldingsfrist:</label>
+			<label index="registerLinkLabel">Tilmelding</label>
+			<label index="registerStartLabel">Tilmelding er åben fra:</label>
+			<label index="select_date">Vælg en dato</label>
+			<label index="to">til</label>
+		</languageKey>
+        <languageKey index="de" type="array">
+            <label index="from">Von</label>
+            <label index="to">bis</label>
+            <label index="event_dates">Veranstaltungs Daten:</label>
+            <label index="event_date">Veranstaltungs Datum:</label>
+            <label index="location">Ort:</label>
+            <label index="quarter1">Erstes Quartal</label>
+            <label index="quarter2">Zweites  Quartal</label>
+            <label index="quarter3">Drittes  Quartal</label>
+            <label index="quarter4">Viertes  Quartal</label>
+            <label index="months">Monate</label>
+            <label index="select_date">Wählen sie ein Datum</label>
+            <label index="previous">Vorheriges</label>
+            <label index="next">Nächstes</label>
+            <label index="organizer">Organisator:</label>
+			<label index="dateselHeader">Datum auswählen</label>
+			<label index="dateSelItemItems">Auswahl:</label>
+			<label index="registerLinkLabel">Registrieren</label>
+			<label index="registerStartLabel">Registrierung öffnet am:</label>
+			<label index="registerEndLabel">Registrierung schießt am:</label>
+			<label index="registerClosed">Registrierung wurde geschlossen.</label>
+			<label index="price">Preis:</label>
+			<label index="priceNote">Preis-Info:</label>
+			<label index="freePrice">kostenlos</label>
+			<label index="downloadSingleICS">In Kalender eintragen</label>
+        </languageKey>
+        <languageKey index="no" type="array">
+            <label index="from">Fra</label>
+            <label index="to">til</label>
+            <label index="event_dates">Tid:</label>
+            <label index="event_date">Tid:</label>
+            <label index="location">Sted:</label>
+            <label index="quarter1">Første kvartal</label>
+            <label index="quarter2">Andre kvartal</label>
+            <label index="quarter3">Tredje kvartal</label>
+            <label index="quarter4">Fjerde kvartal</label>
+            <label index="months">måneder</label>
+            <label index="select_date">Velg en dato</label>
+            <label index="previous">Forrige</label>
+            <label index="next">Neste</label>
+            <label index="organizer">Organisator:</label>
+            <label index="dateselHeader">Velg en dato</label>
+            <label index="dateSelItemItems">Elementer:</label>
+            <label index="registerButtonLabel">Påmelding</label>
+            <label index="registerStartLabel">Påmeldingen åpner:</label>
+            <label index="registerEndLabel">Påmeldingsfrist:</label>
+            <label index="registerClosed">Påmeldingen er avsluttet.</label>
+            <label index="price">Pris:</label>
+            <label index="priceNote">Prisforklaring:</label>
+            <label index="freePrice">Gratis</label>
+			<label index="downloadSingleICS">Legg til i kalenderen</label>
+			<label index="registeredCount">Påmeldinger:</label>
+			<label index="registeredFreeCount">Ledige plasser:</label>
+			<label index="registeredMax">Maks påmeldinger:</label>
+			<label index="registeredUnlimited">ubegrenset</label>
+			<label index="registerFull">Ingen ledige plasser.</label>
+        </languageKey>
+        <languageKey index="it" type="array">
+        </languageKey>
+        <languageKey index="fr" type="array">
+        	<label index="from">De</label>
+           <label index="to">à</label>
+           <label index="event_dates">Dates de l'évènement :</label>
+           <label index="event_date">Date de l'évènement :</label>
+           <label index="location">Location:</label>
+           <label index="quarter1">First quarter</label>
+           <label index="quarter2">Second quarter</label>
+           <label index="quarter3">Third quarter</label>
+           <label index="quarter4">Fourth quarter</label>
+           <label index="months">Array</label>
+           <label index="select_date">Sélectionnez une date</label>
+           <label index="previous">Précédent</label>
+           <label index="next">Suivant</label>
+           <label index="organizer">Organisateur :</label>
+           <label index="dateselHeader">Sélectionnez une date</label>
+           <label index="dateSelItemItems">Items:</label>
+           <label index="registerLinkLabel">Inscriptions</label>
+           <label index="registerStartLabel">Les inscriptions ouvrent le :</label>
+           <label index="registerEndLabel">Les inscriptions ferment le :</label>
+           <label index="registerClosed">Les inscriptions sont terminées.</label>
+        </languageKey>
+        <languageKey index="es" type="array">
+        </languageKey>
+        <languageKey index="nl" type="array">
+        </languageKey>
+        <languageKey index="cz" type="array">
+        </languageKey>
+        <languageKey index="pl" type="array">
+        </languageKey>
+        <languageKey index="si" type="array">
+        </languageKey>
+        <languageKey index="fi" type="array">
+            <label index="from">Allkaen</label>
+            <label index="to">Päättyen</label>
+            <label index="event_dates">Tapahtuman päivät:</label>
+            <label index="event_date">Tapahtumapäivä:</label>
+            <label index="location">Paikka:</label>
+            <label index="quarter1">Ensimmäinen nejännes</label>
+            <label index="quarter2">Toinen nejännes</label>
+            <label index="quarter3">Kolmas nejännes</label>
+            <label index="quarter4">Neljäs nejännes</label>
+            <label index="months">kuukaudet</label>
+            <label index="select_date">Valitse päiväys</label>
+            <label index="previous">Edellinen</label>
+            <label index="next">Seuraava</label>
+            <label index="organizer">Järjestäjä:</label>
+        </languageKey>
+        <languageKey index="tr" type="array">
+        </languageKey>
+        <languageKey index="se" type="array">
+        </languageKey>
+        <languageKey index="pt" type="array">
+        </languageKey>
+        <languageKey index="ru" type="array">
+        </languageKey>
+        <languageKey index="ro" type="array">
+        </languageKey>
+        <languageKey index="ch" type="array">
+        </languageKey>
+        <languageKey index="sk" type="array">
+        </languageKey>
+        <languageKey index="lt" type="array">
+        </languageKey>
+        <languageKey index="is" type="array">
+        </languageKey>
+        <languageKey index="hr" type="array">
+        </languageKey>
+        <languageKey index="hu" type="array">
+        </languageKey>
+        <languageKey index="gl" type="array">
+        </languageKey>
+        <languageKey index="th" type="array">
+        </languageKey>
+        <languageKey index="gr" type="array">
+        </languageKey>
+        <languageKey index="hk" type="array">
+        </languageKey>
+        <languageKey index="eu" type="array">
+        </languageKey>
+        <languageKey index="bg" type="array">
+        </languageKey>
+        <languageKey index="br" type="array">
+        </languageKey>
+        <languageKey index="et" type="array">
+        </languageKey>
+        <languageKey index="ar" type="array">
+        </languageKey>
+        <languageKey index="he" type="array">
+        </languageKey>
+        <languageKey index="ua" type="array">
+        </languageKey>
+        <languageKey index="lv" type="array">
+        </languageKey>
+        <languageKey index="jp" type="array">
+        </languageKey>
+        <languageKey index="vn" type="array">
+        </languageKey>
+        <languageKey index="ca" type="array">
+        </languageKey>
+        <languageKey index="ba" type="array">
+        </languageKey>
+        <languageKey index="kr" type="array">
+        </languageKey>
+    </data>
+    <orig_hash type="array">
+        <languageKey index="default" type="array">
+            <label index="from" type="integer">98197902</label>
+            <label index="to" type="integer">1797664</label>
+            <label index="event_dates" type="integer">107565599</label>
+            <label index="event_date" type="integer">151555364</label>
+            <label index="location" type="integer">199837335</label>
+            <label index="quarter1" type="integer">48710163</label>
+            <label index="quarter2" type="integer">126009542</label>
+            <label index="quarter3" type="integer">199803843</label>
+            <label index="quarter4" type="integer">261146632</label>
+            <label index="months" type="integer">71372483</label>
+            <label index="select_date" type="integer">105767520</label>
+            <label index="previous" type="integer">231864181</label>
+            <label index="next" type="integer">17482704</label>
+            <label index="organizer" type="integer">153598497</label>
+        </languageKey>
+        <languageKey index="dk" type="array">
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="from" type="integer">98197902</label>
+            <label index="to" type="integer">1797664</label>
+            <label index="event_dates" type="integer">107565599</label>
+            <label index="event_date" type="integer">151555364</label>
+            <label index="location" type="integer">199837335</label>
+            <label index="quarter1" type="integer">48710163</label>
+            <label index="quarter2" type="integer">126009542</label>
+            <label index="quarter3" type="integer">199803843</label>
+            <label index="quarter4" type="integer">261146632</label>
+            <label index="months" type="integer">71372483</label>
+            <label index="select_date" type="integer">105767520</label>
+            <label index="previous" type="integer">231864181</label>
+            <label index="next" type="integer">17482704</label>
+            <label index="organizer" type="integer">153598497</label>
+        </languageKey>
+        <languageKey index="no" type="array">
+            <label index="from" type="integer">98197902</label>
+            <label index="to" type="integer">1797664</label>
+            <label index="event_dates" type="integer">107565599</label>
+            <label index="event_date" type="integer">151555364</label>
+            <label index="location" type="integer">199837335</label>
+            <label index="quarter1" type="integer">48710163</label>
+            <label index="quarter2" type="integer">126009542</label>
+            <label index="quarter3" type="integer">199803843</label>
+            <label index="quarter4" type="integer">261146632</label>
+            <label index="months" type="integer">71372483</label>
+            <label index="select_date" type="integer">105767520</label>
+            <label index="previous" type="integer">231864181</label>
+            <label index="next" type="integer">17482704</label>
+            <label index="organizer" type="integer">153598497</label>
+        </languageKey>
+        <languageKey index="it" type="array">
+        </languageKey>
+        <languageKey index="fr" type="array">
+        </languageKey>
+        <languageKey index="es" type="array">
+        </languageKey>
+        <languageKey index="nl" type="array">
+        </languageKey>
+        <languageKey index="cz" type="array">
+        </languageKey>
+        <languageKey index="pl" type="array">
+        </languageKey>
+        <languageKey index="si" type="array">
+        </languageKey>
+        <languageKey index="fi" type="array">
+            <label index="from" type="integer">98197902</label>
+            <label index="to" type="integer">1797664</label>
+            <label index="event_dates" type="integer">107565599</label>
+            <label index="event_date" type="integer">151555364</label>
+            <label index="location" type="integer">199837335</label>
+            <label index="quarter1" type="integer">48710163</label>
+            <label index="quarter2" type="integer">126009542</label>
+            <label index="quarter3" type="integer">199803843</label>
+            <label index="quarter4" type="integer">261146632</label>
+            <label index="months" type="integer">71372483</label>
+            <label index="select_date" type="integer">105767520</label>
+            <label index="previous" type="integer">231864181</label>
+            <label index="next" type="integer">17482704</label>
+            <label index="organizer" type="integer">153598497</label>
+        </languageKey>
+        <languageKey index="tr" type="array">
+        </languageKey>
+        <languageKey index="se" type="array">
+        </languageKey>
+        <languageKey index="pt" type="array">
+        </languageKey>
+        <languageKey index="ru" type="array">
+        </languageKey>
+        <languageKey index="ro" type="array">
+        </languageKey>
+        <languageKey index="ch" type="array">
+        </languageKey>
+        <languageKey index="sk" type="array">
+        </languageKey>
+        <languageKey index="lt" type="array">
+        </languageKey>
+        <languageKey index="is" type="array">
+        </languageKey>
+        <languageKey index="hr" type="array">
+        </languageKey>
+        <languageKey index="hu" type="array">
+        </languageKey>
+        <languageKey index="gl" type="array">
+        </languageKey>
+        <languageKey index="th" type="array">
+        </languageKey>
+        <languageKey index="gr" type="array">
+        </languageKey>
+        <languageKey index="hk" type="array">
+        </languageKey>
+        <languageKey index="eu" type="array">
+        </languageKey>
+        <languageKey index="bg" type="array">
+        </languageKey>
+        <languageKey index="br" type="array">
+        </languageKey>
+        <languageKey index="et" type="array">
+        </languageKey>
+        <languageKey index="ar" type="array">
+        </languageKey>
+        <languageKey index="he" type="array">
+        </languageKey>
+        <languageKey index="ua" type="array">
+        </languageKey>
+        <languageKey index="lv" type="array">
+        </languageKey>
+        <languageKey index="jp" type="array">
+        </languageKey>
+        <languageKey index="vn" type="array">
+        </languageKey>
+        <languageKey index="ca" type="array">
+        </languageKey>
+        <languageKey index="ba" type="array">
+        </languageKey>
+        <languageKey index="kr" type="array">
+        </languageKey>
+    </orig_hash>
+    <orig_text type="array">
+        <languageKey index="default" type="array">
+        </languageKey>
+        <languageKey index="dk" type="array">
+        </languageKey>
+        <languageKey index="de" type="array">
+        </languageKey>
+        <languageKey index="no" type="array">
+        </languageKey>
+        <languageKey index="it" type="array">
+        </languageKey>
+        <languageKey index="fr" type="array">
+        </languageKey>
+        <languageKey index="es" type="array">
+        </languageKey>
+        <languageKey index="nl" type="array">
+        </languageKey>
+        <languageKey index="cz" type="array">
+        </languageKey>
+        <languageKey index="pl" type="array">
+        </languageKey>
+        <languageKey index="si" type="array">
+        </languageKey>
+        <languageKey index="fi" type="array">
+        </languageKey>
+        <languageKey index="tr" type="array">
+        </languageKey>
+        <languageKey index="se" type="array">
+        </languageKey>
+        <languageKey index="pt" type="array">
+        </languageKey>
+        <languageKey index="ru" type="array">
+        </languageKey>
+        <languageKey index="ro" type="array">
+        </languageKey>
+        <languageKey index="ch" type="array">
+        </languageKey>
+        <languageKey index="sk" type="array">
+        </languageKey>
+        <languageKey index="lt" type="array">
+        </languageKey>
+        <languageKey index="is" type="array">
+        </languageKey>
+        <languageKey index="hr" type="array">
+        </languageKey>
+        <languageKey index="hu" type="array">
+        </languageKey>
+        <languageKey index="gl" type="array">
+        </languageKey>
+        <languageKey index="th" type="array">
+        </languageKey>
+        <languageKey index="gr" type="array">
+        </languageKey>
+        <languageKey index="hk" type="array">
+        </languageKey>
+        <languageKey index="eu" type="array">
+        </languageKey>
+        <languageKey index="bg" type="array">
+        </languageKey>
+        <languageKey index="br" type="array">
+        </languageKey>
+        <languageKey index="et" type="array">
+        </languageKey>
+        <languageKey index="ar" type="array">
+        </languageKey>
+        <languageKey index="he" type="array">
+        </languageKey>
+        <languageKey index="ua" type="array">
+        </languageKey>
+        <languageKey index="lv" type="array">
+        </languageKey>
+        <languageKey index="jp" type="array">
+        </languageKey>
+        <languageKey index="vn" type="array">
+        </languageKey>
+        <languageKey index="ca" type="array">
+        </languageKey>
+        <languageKey index="ba" type="array">
+        </languageKey>
+        <languageKey index="kr" type="array">
+        </languageKey>
+    </orig_text>
+</T3locallang>
