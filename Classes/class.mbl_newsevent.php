@@ -61,7 +61,7 @@ class tx_mblnewsevent extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin {
   function _dateSelectorMenu($tt_news) {
 	$templateService = GeneralUtility::makeInstance(MarkerBasedTemplateService::class);
     $db = Database::getInstance();
-    $this->pi_loadLL();
+    $this->pi_loadLL('EXT:mbl_newsevent/Resources/locallang.xml');
     $this->cObj = $tt_news->cObj;
 
     $tt_news->arcExclusive = 1;
@@ -715,7 +715,7 @@ class tx_mblnewsevent extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin {
       $this->conf = &$tt_news->conf['mbl_newsevent.'];
 
       $this->pi_setPiVarDefaults();
-      $this->pi_loadLL();
+      $this->pi_loadLL('EXT:mbl_newsevent/Resources/locallang.xml');
 
       $markerArray = array();
       $markerArray['###EVENT_FROM_DATE###'] = $this->cObj->stdWrap(
