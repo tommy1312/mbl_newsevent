@@ -22,6 +22,7 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
+use RG\TtNews\Database\Database;
 
 class ext_update {
 	public function main() {
@@ -50,17 +51,19 @@ class ext_update {
 	
 	
 	public function hasDateAndTimeCombined() {
-		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*', 'tt_news', 'tx_mblnewsevent_from % 86400 != 0 || tx_mblnewsevent_to % 86400 != 0');
-		if($res && $GLOBALS['TYPO3_DB']->sql_num_rows($res)) {
-			return $GLOBALS['TYPO3_DB']->sql_num_rows($res);
+		$db = Database::getInstance();
+		$res = $db->exec_SELECTquery('*', 'tt_news', 'tx_mblnewsevent_from % 86400 != 0 || tx_mblnewsevent_to % 86400 != 0');
+		if($res && count($res->fetchAll())) {
+			return count($res->fetchAll());
 		}
 		return 0;
 	}
 	
 	public function separateDateAndTime() {
-		$res = $GLOBALS['TYPO3_DB']->sql_query('UPDATE tt_news SET tx_mblnewsevent_fromtime = tx_mblnewsevent_from % 86400, tx_mblnewsevent_from = tx_mblnewsevent_from DIV 86400 * 86400, tx_mblnewsevent_totime = tx_mblnewsevent_to % 86400, tx_mblnewsevent_to = tx_mblnewsevent_to DIV 86400 * 86400 WHERE tx_mblnewsevent_from % 86400 != 0 || tx_mblnewsevent_to % 86400 != 0');
+		$db = Database::getInstance();
+		$res = $db->getConnection('tt_news')->executeQuery('UPDATE tt_news SET tx_mblnewsevent_fromtime = tx_mblnewsevent_from % 86400, tx_mblnewsevent_from = tx_mblnewsevent_from DIV 86400 * 86400, tx_mblnewsevent_totime = tx_mblnewsevent_to % 86400, tx_mblnewsevent_to = tx_mblnewsevent_to DIV 86400 * 86400 WHERE tx_mblnewsevent_from % 86400 != 0 || tx_mblnewsevent_to % 86400 != 0');
 		
-		return  $GLOBALS['TYPO3_DB']->sql_affected_rows($res);
+		return $res->rowCount();
 	}
 	
 	public function access() {
